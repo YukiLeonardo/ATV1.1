@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#000000"
+    android:isScrollContainer="false"
+    android:keepScreenOn="false"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/valor1"
+        android:layout_width="379dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="2dp"
+        android:backgroundTint="#FF0000"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119"
+        tools:text="@string/valor1" />
+
+    <EditText
+        android:id="@+id/valor2"
+        android:layout_width="385dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="#FF0000"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335"
+        tools:text="@string/valor2" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:background="#000000"
+        android:backgroundTint="#FFFFFF"
+        android:shadowColor="#808080"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textColorHighlight="#888888"
+        android:textColorHint="#8C8C8C"
+        android:textColorLink="#8E8E8E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/resultado" />
+
+    <TextView
+        android:id="@+id/Valor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="194dp"
+        android:layout_marginBottom="22dp"
+        android:text="Valor1"
+        app:layout_constraintBottom_toTopOf="@+id/valor1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="194dp"
+        android:layout_marginBottom="17dp"
+        android:text="Valor2"
+        app:layout_constraintBottom_toTopOf="@+id/valor2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_somar"
+        android:layout_width="206dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="#00BCD4"
+        android:foregroundTint="#00BCD4"
+        android:shadowColor="#00BCD4"
+        android:text="SOMAR"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/bnt_subtrair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado"
+        tools:text="@string/somar" />
+
+    <Button
+        android:id="@+id/bnt_subtrair"
+        android:layout_width="206dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="#00BCD4"
+        android:text="SUBTRAIR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_somar"
+        app:layout_constraintTop_toBottomOf="@+id/resultado"
+        tools:text="@string/subtrair" />
+
+    <Button
+        android:id="@+id/bnt_multiplicar"
+        android:layout_width="206dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#00BCD4"
+        android:text="MULTIPLICAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bnt_dividir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_somar"
+        tools:text="@string/multiplicar" />
+
+    <Button
+        android:id="@+id/bnt_dividir"
+        android:layout_width="206dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#00BCD4"
+        android:text="DIVIDIR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bnt_multiplicar"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_subtrair"
+        tools:text="@string/dividir" />
+
+</android.support.constraint.ConstraintLayout>
